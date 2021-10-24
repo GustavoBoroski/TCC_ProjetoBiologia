@@ -10,21 +10,20 @@
                             img-alt="Card Image"
                             text-variant="white"
                             title="Trabalho de Conclusão de Curso"
-                            sub-title="ENSINO DE PROGRAMAÇÃO PARA CRIANÇAS DO ENSINO MÉDIO"
+                            sub-title="Ensino de Programação para Crianças do Ensino Médio"
                         >
-                            <b-card-text class="texto1">Quer saber qual a chance de se ter olhos claros ou escuros?</b-card-text>
-                            <b-card-text class="texto2">Clique no botão abaixo!</b-card-text>
-                            <b-button href="#" variant="primary" to="/game">Próximo</b-button>
+                        
+                            <div>
+                                <b-card-text class="texto1">Quer saber qual a chance de se ter olhos claros ou escuros?</b-card-text>
+                                <b-card-text class="texto2">Clique no botão abaixo!</b-card-text>
+                                <b-button href="#" variant="primary" to="/game">Próximo</b-button>
+                            </div>
+
                         </b-card>
                     </b-col>
                 </b-row>
             </b-container>
-        </div>
-        <div class="Testess">
-            <b-container class="teste1">
-
-            </b-container>
-        </div>
+        </div>        
     </div>
 </template>
 
@@ -36,12 +35,8 @@ export default {
 
 <style scoped>
 .container{
-    height: 320px !important;
+    height: 100% !important;
     background-color: white;
-}
-.Testess{
-    background-color: #4b5dff !important;
-
 }
 .home-i{
     background-color: #4b5dff !important;
