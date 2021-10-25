@@ -10,7 +10,7 @@ const router = new Router({
     routes: [
   
         {
-            path: '/home',
+            path: '/',
             component: FirstScreen,
         },
         {
