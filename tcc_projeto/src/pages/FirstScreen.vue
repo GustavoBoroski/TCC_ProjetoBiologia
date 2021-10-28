@@ -26,10 +26,12 @@
             <div id="titulo-tcc">
               <h2><strong>Ensino de Programação para Crianças do Ensino Médio</strong></h2>
             </div>
-            <div id="contexto">
+            <div id="contexto1">
               <h2><strong>Você quer saber qual era a chance de você ter olhos claros ou escuros?</strong></h2>
+            </div>
+            <div id="contexto">
               <h2><strong>Então clique no botão abaixo!</strong></h2>
-              <b-button to="./game">Próximo</b-button>
+              <b-col sm="12" id="botao"><b-button to="./game">Próximo</b-button></b-col>
             </div>
           </b-col>
         </b-row>
@@ -43,16 +45,17 @@ export default {};
 </script>
 
 <style>
-.img {
-  /* position: absolute; */
-  
+.btn-secondary{
+  width: 20% !important;
+  height: 49px !important;
+  margin-bottom: 2% !important;
 }
 .btn-secondary:focus, .btn-secondary:read-only{
-    /* background-color: #1f2191 !important; */
-    /* box-shadow: none !important; */
+    background-color: #1f2191 !important;
+    box-shadow: none !important;
 }
 .btn-secondary:hover{
-    /* background-color: #1f2191; */
+    background-color: #f32323;
 }
 .divExterna{
   background-color: #1f2191;
@@ -70,28 +73,38 @@ export default {};
 }
 .containeru {
   text-align: center;
-  /* position: absolute; */
   background-color: white;
-  /* display: inline-block; */
-  /* width: 50%; */
-  /* height: 50%; */
-  /* margin-left: 2%; */
   background-image: url("https://www.readocs.com/wp-content/uploads/cornea-1.jpg");
-  
+  border: 15px solid black;
+  box-sizing: border-box;
+  border-radius: 25px;
 }
 #tcc h1 {
   font-size: 30px;
-  color: black !important;
+  color: rgb(255, 255, 255) !important;
+  text-shadow: 2px 2px black;
 }
 #titulo-tcc h2 {
   font-size: 20px;
-  color: black !important;
+  color: white !important;
+  text-shadow: 2px 2px black;
 }
 #contexto h2{
   font-size: 25px;
   text-align: justify;
   margin-left: 5%;
-  margin-top: 10%;
-  color: black !important;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: white !important;
+  text-shadow: 2px 2px black;
+  text-align: center;
+}
+#contexto1 h2{
+  font-size: 25px;
+  text-align: justify;
+  margin-left: 5%;
+  margin-top: 5%;
+  color: white !important;
+  text-shadow: 2px 2px black;
 }
 </style>
