@@ -74,7 +74,7 @@ export default {};
 .containeru {
   text-align: center;
   background-color: white;
-  background-image: url("https://www.readocs.com/wp-content/uploads/cornea-1.jpg");
+  background-image: url("https://www.news-medical.net/image.axd?picture=2021%2F4%2Fshutterstock_1138783001.jpg");
   border: 15px solid black;
   box-sizing: border-box;
   border-radius: 25px;
