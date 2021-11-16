@@ -4,6 +4,7 @@
       <div class="segundaDiv">
         <b-form @submit="onSubmit" @reset="onReset" v-if="show">
           <h2 style="text-align: center; margin-bottom: 3% !important">Selecione o tipo de lóbulo que seus pais possuem.</h2>
+          
           <b-container class="avosPaiMae">
             <b-row>
               <b-col sm="2">
@@ -16,6 +17,7 @@
                   ></b-form-select>
                 </b-form-group>
               </b-col>
+
               <b-col sm="10">
                 <b-form-group id="input-group-3" label="Mãe" label-for="input-3">
                   <b-form-select
@@ -28,6 +30,7 @@
               </b-col>
             </b-row>
           </b-container>
+
           <hr>
           <div id="botoes">
             <b-button type="submit" variant="primary">Calcular</b-button>
@@ -37,13 +40,6 @@
 
         <b-card class="mt-3" header="Resultado abaixo:">
           <pre class="m-0">{{ result }}</pre>
-          <b-container class="imagens">
-            <b-row>
-              <b-col sm="4">
-                <ImagemRecessivo/>
-              </b-col>
-            </b-row>
-          </b-container>
         </b-card>
       </div>
     </b-container>
@@ -51,11 +47,7 @@
 </template>
 
 <script>
-import ImagemRecessivo from "../components/ImagemRecessivo.vue";
 export default {
-  components:{
-    ImagemRecessivo,
-  },
   data() {      
     return {
       result: null, 
@@ -80,16 +72,16 @@ export default {
     onSubmit(event) {
       event.preventDefault();
       if(this.form.tipo1 == "Dominante" && this.form.tipo2 == "Dominante"){
-        return this.result = "75% - Dom / 25% - Rec"
+        return this.result = "Com essa combinação você possui a chance de 75% - Dominate  e  25% - Recessivo"  
       }
       if(this.form.tipo1 == "Dominante" && this.form.tipo2 == "Recessivo"){
-        return this.result = "50% - Dom / 50% - Rec"
+        return this.result = "Com essa combinação você possui a chance de 50% - Dominate  e  50% - Recessivo"
       }
       if(this.form.tipo1 == "Recessivo" && this.form.tipo2 == "Recessivo"){
-        return this.result = "100% - Rec"
+        return this.result = "Com essa combinação você possui a chance de 100% - Recessivo"
       }
       if(this.form.tipo1 == "Recessivo" && this.form.tipo2 == "Dominante"){
-        return this.result = "50% - Rec / 50% - Dom"
+        return this.result = "Com essa combinação você possui a chance de 50% - Dominate  e  50% - Recessivo"
       }
     },
     onReset(event) {
@@ -107,11 +99,14 @@ export default {
 </script>
 
 <style>
-.PaiMae{
-  margin-left: 32% !important;
+.m-0{
+  font-size: 20px !important;
+  text-align: center !important;
+
 }
 .avosPaiMae{
   margin-left: 15% !important;
+  font-size: 20px !important;
 }
 #botoes{
   text-align: center !important;
