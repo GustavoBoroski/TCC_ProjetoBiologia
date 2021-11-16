@@ -27,11 +27,11 @@
               <h2><strong>Ensino de Programação para Crianças do Ensino Médio</strong></h2>
             </div>
             <div id="contexto1">
-              <h2><strong>Você quer saber qual era a chance de você ter olhos claros ou escuros?</strong></h2>
+              <h2><strong>Você sabia que existe dois principais formatos de orelhas?</strong></h2>
             </div>
             <div id="contexto">
-              <h2><strong>Então clique no botão abaixo!</strong></h2>
-              <b-col sm="12" id="botao"><b-button to="./game">Próximo</b-button></b-col>
+              <h2><strong>Vamos descobrir qual a chance de você ter uma das duas?</strong></h2>
+              <b-col sm="12" id="botao"><b-button to="./info">Próximo</b-button></b-col>
             </div>
           </b-col>
         </b-row>
@@ -75,13 +75,15 @@ export default {};
   text-align: center;
   background-color: white;
   background-image: url("https://www.news-medical.net/image.axd?picture=2021%2F4%2Fshutterstock_1138783001.jpg");
+  background-repeat: no-repeat;
   border: 15px solid black;
   box-sizing: border-box;
   border-radius: 25px;
+  background-size: 100% !important;
 }
 #tcc h1 {
   font-size: 30px;
-  color: rgb(255, 255, 255) !important;
+  color: white !important;
   text-shadow: 2px 2px black;
 }
 #titulo-tcc h2 {
@@ -91,8 +93,8 @@ export default {};
 }
 #contexto h2{
   font-size: 25px;
-  text-align: justify;
-  margin-left: 5%;
+  text-align: center;
+  margin-left: 0%;
   margin-top: 5%;
   margin-bottom: 5%;
   color: white !important;
@@ -101,8 +103,8 @@ export default {};
 }
 #contexto1 h2{
   font-size: 25px;
-  text-align: justify;
-  margin-left: 5%;
+  text-align: center;
+  margin-left: 0%;
   margin-top: 5%;
   color: white !important;
   text-shadow: 2px 2px black;

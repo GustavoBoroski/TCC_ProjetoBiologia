@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import FirstScreen from './pages/FirstScreen';
 import PageGame from './pages/PageGame';
+import Info from './pages/Info';
 
 Vue.use(Router);
 
@@ -16,6 +17,10 @@ const router = new Router({
         {
             path: '/game',
             component: PageGame,
+        },
+        {
+            path: '/info',
+            component: Info,
         }
     ]
 });
