@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import FirstScreen from './pages/FirstScreen';
-import PageGame from './pages/PageGame';
-import Info from './pages/Info';
+import RegisterLink from './pages/RegisterLink';
+import EditLink from './pages/EditLink';
+import ListLinks from './pages/ListLinks';
 
 Vue.use(Router);
 
@@ -11,17 +11,18 @@ const router = new Router({
     routes: [
   
         {
+            name: 'listLinks',
             path: '/',
-            component: FirstScreen,
+            component: ListLinks,
         },
         {
-            path: '/game',
-            component: PageGame,
+            path: '/registerLink',
+            component: RegisterLink,
         },
         {
-            path: '/info',
-            component: Info,
-        }
+            path: '/editLink',
+            component: EditLink,
+        },
     ]
 });
 
